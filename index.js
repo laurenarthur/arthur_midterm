@@ -14,7 +14,7 @@ const port = process.env.PORT || 3000;
 //use EJS for templates 
 app.set('view engine', 'ejs');
 //make styles publiv
-app.ues(express.static("public"));
+app.use(express.static("public"));
 
 
 //server setup 
