@@ -17,6 +17,11 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
 
+//get home page / 
+app.get('/', function(req, res){
+    res.render('index');
+});
+
 //server setup 
 app.listen(port, function(){
     console.log('Listening on ' + port)
