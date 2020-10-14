@@ -22,6 +22,17 @@ app.get('/', function(req, res){
     res.render('index');
 });
 
+
+//fetch comic of the day 
+app.get('/comic', function(req, res){
+    let comicdata;
+    fetch('')
+    .then(res => res.json())
+    .then(data => {
+        comicdata = data;
+        res.json(comicdata);
+    });
+})
 //server setup 
 app.listen(port, function(){
     console.log('Listening on ' + port)
