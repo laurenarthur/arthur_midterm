@@ -45,8 +45,8 @@ app.get('/', function(req, res){
 
 //fetch random comic
 app.get('/random', function(req, res){
-    let randnumber = Math.floor(Math.random() * 2372);  
-    fetch('http://xkcd.com/info.0.json' + randnumber)
+    let randNumber=Math.floor((Math.random() * 2373) + 1);
+    fetch('https://xkcd.com/'+randNumber+'/info.0.json')
     .then(res => res.json())
     .then(data => {
         res.render('random', {data:data});
