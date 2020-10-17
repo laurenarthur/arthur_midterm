@@ -34,5 +34,11 @@
             <p>This is todays comic from XKCD.</p>
             <a class="btn btn-primary btn-lg" href="#" role="button">Random Comic</a>
         </div>
+
+         <h2> </h2>
+            <img src="<%= data.img %>" alt="Comic of the day">
+            <h2><%=data.title%></h2>
+            <p>Date: <%= data.month %> - <%= data.day %> - <%= data.year %></p>
+            <p><%= data.explanation %></p>
   </body>
 </html>
